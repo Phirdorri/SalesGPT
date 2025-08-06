@@ -16,11 +16,8 @@ load_dotenv()
 
 # Access environment variables
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-CORS_ORIGINS = ["http://localhost:3000", 
-                "http://react-frontend:80",
-                "https://salesgpt-frontend-production.up.railway.app",
-                "https://sales-gpt-frontend.vercel.app"]
-CORS_METHODS = ["GET", "POST"]
+CORS_ORIGINS = ["*"]
+CORS_METHODS = ["*"]
 
 # Initialize FastAPI app
 app = FastAPI()
